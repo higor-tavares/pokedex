@@ -23,7 +23,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "lint": "eslint --fix",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix",
     "fmt" : "npm run format",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "build": "webpack --mode production",
