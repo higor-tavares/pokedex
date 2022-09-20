@@ -14,3 +14,15 @@
 .list li:hover{
     background-color: #fff;
 }
+
+@media screen and (max-width: 900px) {
+    .list li {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list li {
+        flex-basis: 100%;
+    }
+}
