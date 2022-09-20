@@ -5,10 +5,11 @@ import "./index.css";
 import Home from "./pages/Home";
 import CardDetails from "./pages/CardDetails";
 import {Link} from "react-router-dom"
+import Header from "./components/Header";
 const App = () => {
   return (
     <Router>
-       <Link to="/"><h1 className="title">PokéDex</h1></Link>
+     <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/details/:name" element={<CardDetails />} />

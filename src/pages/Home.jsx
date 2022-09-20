@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
+import Search from "../components/Search";
 
 const Home = () => {
   const [pokemonList, setPokemonList] = useState(Array.from([]));
@@ -16,6 +17,7 @@ const Home = () => {
   };
   return (
     <div>
+      <Search/>
       <ul className="list">
         {pokemonList.map((pokemon, index) => (
           <li>
