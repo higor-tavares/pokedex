@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import CardDetails from "./pages/CardDetails";
@@ -11,7 +11,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/details/:name" element={<CardDetails />} />
+        <Route path="details/:name" element={<CardDetails />} />
       </Routes>
     </Router>
   );
