@@ -1,0 +1,11 @@
+.simple-card{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #777;
+    padding: 8px;
+    margin: 0px;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,7 @@
+.card-details{
+    border: 1px solid #aaa;
+    padding: 16px;
+    box-shadow: 2px 2px 2px #777;
+    width: 300px;
+    margin: auto;
+}
