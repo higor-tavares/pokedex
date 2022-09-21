@@ -17,13 +17,13 @@ const Home = () => {
     );
     const jsonData = await response.json();
     setPokemonList(jsonData.results);
-    setPokemons(jsonData.results);
+    setPokemons(jsonData.results.slice(0, 18));
   };
   const filterData = (text) => {
     const filteredData = pokemonList.filter((pokemon) =>
       pokemon.name.toUpperCase().includes(text.toUpperCase())
     );
-    setPokemons(filteredData);
+    setPokemons(filteredData.slice(0, 18));
   };
   return (
     <div>

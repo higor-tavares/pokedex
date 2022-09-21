@@ -11,9 +11,6 @@
     list-style: none;
     margin: 8px;
 }
-.list li:hover{
-    background-color: #fff;
-}
 
 @media screen and (max-width: 900px) {
     .list li {

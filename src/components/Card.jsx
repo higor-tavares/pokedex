@@ -1,14 +1,26 @@
 import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
-
+import { useState, useEffect } from "react";
 const Card = ({ name }) => {
+  const [image, setImage] = useState("");
+  const [id, setId] = useState("");
+  useEffect(() => {
+    fetchData();
+  }, [name]);
+  const fetchData = async () => {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+    const json = await response.json();
+    setImage(json.sprites.front_default);
+    setId(json.id)
+  };
   return (
-    <div className="simple-card">
       <Link to={`/details/${name}`}>
-        <h2>{name}</h2>
+        <div className="card-details">
+          <h2>#{id} {name}</h2>
+          <img src={image} alt="" />
+        </div>
       </Link>
-    </div>
   );
 };
 export default Card;
