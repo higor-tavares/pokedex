@@ -1,11 +1,21 @@
 .simple-card{
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 2px #777;
-    padding: 8px;
-    margin: 0px;
-    text-transform: capitalize;
+    border: 1px solid #aaa;
+    padding: auto;
+    box-shadow: 5px 5px 12px #777;
+    width: 300px;
+    margin: 16px auto;
+    border-radius: 8px;
 }
-a{
-    text-decoration: none;
+.simple-card h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    border-bottom: 2px solid #CCC;
+    line-height: 100%;
+}
+.simple-card img{
+    height: 160px;
+    width: 160px;
+    display: block;
+    margin: auto;
 }

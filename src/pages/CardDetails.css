@@ -1,21 +1,36 @@
 .card-details{
-    border: 1px solid #aaa;
     padding: auto;
-    box-shadow: 5px 5px 12px #777;
-    width: 300px;
+    width: 100%;
     margin: 16px auto;
-    border-radius: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .card-details h2{
-    text-align: center;
     text-transform: capitalize;
     font-size: 2em;
-    border-bottom: 2px solid #CCC;
+    color: blue;
     line-height: 100%;
 }
+.attributes{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 16px;
+}
 .card-details img{
-    height: 160px;
-    width: 160px;
     display: block;
-    margin: auto;
+    width: 45%;
+}
+
+@media screen and (max-width: 900px) {
+    .card-details img {
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid #CCC;
+    }
+    .attributes{
+        width: 100%;
+    }
 }

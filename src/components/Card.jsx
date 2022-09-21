@@ -12,15 +12,17 @@ const Card = ({ name }) => {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
     const json = await response.json();
     setImage(json.sprites.front_default);
-    setId(json.id)
+    setId(json.id);
   };
   return (
-      <Link to={`/details/${name}`}>
-        <div className="card-details">
-          <h2>#{id} {name}</h2>
-          <img src={image} alt="" />
-        </div>
-      </Link>
+    <Link to={`/details/${name}`}>
+      <div className="simple-card">
+        <h2>
+          #{id} {name}
+        </h2>
+        <img src={image} alt="" />
+      </div>
+    </Link>
   );
 };
 export default Card;
