@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "./CardDetails.css";
+import "./Details.css";
 
-const CardDetails = () => {
+const Details = () => {
   const { name } = useParams();
   const [pokemon, setPokemon] = useState({});
   const [stats, setStats] = useState({});
@@ -47,4 +47,4 @@ const CardDetails = () => {
     </div>
   );
 };
-export default CardDetails;
+export default Details;

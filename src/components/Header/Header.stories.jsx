@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { HashRouter as Router } from "react-router-dom";
 export default {
-    title: 'Page Header',
+    title: 'Components/Header',
     component: Header,
     argTypes: {
         backgroundColor: {control: 'color'}

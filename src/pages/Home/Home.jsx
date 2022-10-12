@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { useState, useEffect } from "react";
-import Card from "../components/Card";
-import Search from "../components/Search";
+import Card from "../../components/Card/Card";
+import Search from "../../components/Search/Search";
 
 const Home = () => {
   const [pokemonList, setPokemonList] = useState(Array.from([]));
