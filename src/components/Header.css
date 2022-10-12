@@ -1,7 +1,11 @@
+a, h1 , body{
+    margin: 0;
+    padding: 0;
+}
 .title{
     color: yellow;
     padding: 16px;
     width: 100%;
-    background-color: red;
+    margin:0;
     text-shadow: 4px 2px 2px blue;
 }
