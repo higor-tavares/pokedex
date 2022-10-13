@@ -1,5 +1,5 @@
 ## Pokedex
-Pokedex simples feita com React & React Navigaror
+Pokedex simples feita com React & React Router 6
 
 ## Como utilizar? 
 Primeiramente rode o comando `npm i` para instalar as dependências do projeto, em seguida 
