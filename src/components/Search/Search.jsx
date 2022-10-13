@@ -1,8 +1,10 @@
 import React from "react";
 import "./Search.css";
-const Search = ({ callBack }) => {
+import PropTypes from 'prop-types';
+
+const Search = ({ callBack, backgroundColor }) => {
   return (
-    <form className="search-bar">
+    <form className="search-bar" style={{backgroundColor}}>
       <input
         type="text"
         onChange={(e) => callBack(e.target.value)}
@@ -13,3 +15,13 @@ const Search = ({ callBack }) => {
   );
 };
 export default Search;
+
+Search.propTypes = {
+  /**
+   * Background color of searchBar
+   */
+  backgroundColor: PropTypes.string,
+}
+Search.defaultProps = {
+  backgroundColor: 'red'
+}

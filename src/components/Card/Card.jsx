@@ -2,6 +2,8 @@ import React from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
+
 const Card = ({ name }) => {
   const [image, setImage] = useState("");
   const [id, setId] = useState("");
@@ -25,4 +27,11 @@ const Card = ({ name }) => {
     </Link>
   );
 };
+
 export default Card;
+Card.propTypes = {
+  /**
+   * Name of the pokemon
+   */
+  name: PropTypes.string
+}
