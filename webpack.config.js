@@ -1,6 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  devServer: {
+    allowedHosts: "all"
+  },
   entry: './src/index.jsx',
   output: {
     path: `${__dirname}/dist`,
